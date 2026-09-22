@@ -61,11 +61,19 @@ if page == "Dashboard":
     )
 
     st.markdown("#### Risk distribution")
+    
+    # Polished and explicitly ordered category chart for judges
+    level_order = ["Critical", "High", "Medium", "Low"]
+    raw_counts = summary["level_counts"]
+    # Reindex or map counts to the logical GRC severity order
+    ordered_counts = {lvl: raw_counts.get(lvl, 0) for lvl in level_order}
+    
     dist_df = pd.DataFrame({
-        "Level": list(summary["level_counts"].keys()),
-        "Count": list(summary["level_counts"].values()),
-    }).set_index("Level")
-    st.bar_chart(dist_df)
+        "Risk Level": list(ordered_counts.keys()),
+        "Count": list(ordered_counts.values()),
+    })
+    
+    st.bar_chart(dist_df, x="Risk Level", y="Count", color="Risk Level")
 
     if summary["top_risk"]:
         top = summary["top_risk"]
@@ -88,7 +96,7 @@ elif page == "Risk Register":
         colors = {"Critical": "#ffcccc", "High": "#ffe0b3", "Medium": "#fff5cc", "Low": "#d9f2d9"}
         return f"background-color: {colors.get(val, '')}"
 
-    st.dataframe(df.style.applymap(highlight_level, subset=["Level"]), use_container_width=True)
+    st.dataframe(df.style.map(highlight_level, subset=["Level"]), use_container_width=True)
 
 # ============================================================
 # WHAT-IF SIMULATOR

@@ -1,0 +1,137 @@
+[
+  {
+    "asset_id": "AST-01",
+    "name": "Active Directory",
+    "type": "Identity",
+    "business_criticality": 5,
+    "owner": "IT Infrastructure",
+    "data_type": "Credentials",
+    "internet_exposed": false
+  },
+  {
+    "asset_id": "AST-02",
+    "name": "Customer Database",
+    "type": "Data Store",
+    "business_criticality": 5,
+    "owner": "Data Engineering",
+    "data_type": "PII/Financial",
+    "internet_exposed": false
+  },
+  {
+    "asset_id": "AST-03",
+    "name": "Payment API",
+    "type": "Application",
+    "business_criticality": 5,
+    "owner": "Product Engineering",
+    "data_type": "Financial",
+    "internet_exposed": true
+  },
+  {
+    "asset_id": "AST-04",
+    "name": "Web Application",
+    "type": "Application",
+    "business_criticality": 4,
+    "owner": "Product Engineering",
+    "data_type": "PII",
+    "internet_exposed": true
+  },
+  {
+    "asset_id": "AST-05",
+    "name": "Employee Laptops",
+    "type": "Endpoint",
+    "business_criticality": 3,
+    "owner": "IT Infrastructure",
+    "data_type": "Internal",
+    "internet_exposed": true
+  },
+  {
+    "asset_id": "AST-06",
+    "name": "Email Server",
+    "type": "Communication",
+    "business_criticality": 3,
+    "owner": "IT Infrastructure",
+    "data_type": "Internal",
+    "internet_exposed": true
+  },
+  {
+    "asset_id": "AST-07",
+    "name": "Cloud Storage",
+    "type": "Data Store",
+    "business_criticality": 4,
+    "owner": "IT Infrastructure",
+    "data_type": "Mixed",
+    "internet_exposed": true
+  },
+  {
+    "asset_id": "AST-08",
+    "name": "ERP",
+    "type": "Application",
+    "business_criticality": 4,
+    "owner": "Finance",
+    "data_type": "Financial",
+    "internet_exposed": false
+  },
+  {
+    "asset_id": "AST-09",
+    "name": "HR System",
+    "type": "Application",
+    "business_criticality": 3,
+    "owner": "HR",
+    "data_type": "PII",
+    "internet_exposed": false
+  },
+  {
+    "asset_id": "AST-10",
+    "name": "Backup Server",
+    "type": "Infrastructure",
+    "business_criticality": 5,
+    "owner": "IT Infrastructure",
+    "data_type": "Mixed",
+    "internet_exposed": false
+  },
+  {
+    "asset_id": "AST-11",
+    "name": "VPN",
+    "type": "Network",
+    "business_criticality": 4,
+    "owner": "IT Infrastructure",
+    "data_type": "Internal",
+    "internet_exposed": true
+  },
+  {
+    "asset_id": "AST-12",
+    "name": "Firewall",
+    "type": "Network",
+    "business_criticality": 4,
+    "owner": "IT Infrastructure",
+    "data_type": "Internal",
+    "internet_exposed": true
+  },
+  {
+    "asset_id": "AST-13",
+    "name": "Development Server",
+    "type": "Infrastructure",
+    "business_criticality": 2,
+    "owner": "Product Engineering",
+    "data_type": "Internal",
+    "internet_exposed": false
+  },
+  {
+    "asset_id": "AST-14",
+    "name": "CI/CD Server",
+    "type": "Infrastructure",
+    "business_criticality": 3,
+    "owner": "Product Engineering",
+    "data_type": "Internal",
+    "internet_exposed": false
+  },
+  {
+    "asset_id": "AST-15",
+    "name": "Third-Party Payment Provider",
+    "type": "Vendor",
+    "business_criticality": 5,
+    "owner": "Product Engineering",
+    "data_type": "Financial",
+    "internet_exposed": true
+  }
+]

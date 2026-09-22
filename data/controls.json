@@ -1,0 +1,152 @@
+[
+  {
+    "topic": "MFA / Authentication",
+    "iso27001": "A.9 Access Control / A.5.17 Authentication information",
+    "nist_csf": "PR.AC-1, PR.AC-7 (Identity Management, Authentication & Access Control)",
+    "recommended_evidence": [
+      "MFA configuration export",
+      "Access review records",
+      "Privileged account inventory"
+    ]
+  },
+  {
+    "topic": "Privileged Access Management",
+    "iso27001": "A.9.2 User access management / A.9.4 System access control",
+    "nist_csf": "PR.AC-4 (Access permissions and authorizations)",
+    "recommended_evidence": [
+      "PAM tool configuration",
+      "Privileged session logs",
+      "Least-privilege review report"
+    ]
+  },
+  {
+    "topic": "Vulnerability Management",
+    "iso27001": "A.8.8 Management of technical vulnerabilities",
+    "nist_csf": "ID.RA-1, PR.IP-12 (Risk Assessment, Vulnerability Management Plan)",
+    "recommended_evidence": [
+      "Latest vulnerability scan report",
+      "Patch management SLA policy",
+      "Remediation tracking log"
+    ]
+  },
+  {
+    "topic": "Backup",
+    "iso27001": "A.8.13 Information backup",
+    "nist_csf": "PR.IP-4, RC.RP-1 (Backups, Recovery Planning)",
+    "recommended_evidence": [
+      "Backup schedule and retention policy",
+      "Last successful restore test",
+      "Offsite/immutable backup configuration"
+    ]
+  },
+  {
+    "topic": "Supplier Security",
+    "iso27001": "A.5.19-A.5.22 Supplier relationships",
+    "nist_csf": "ID.SC-1, ID.SC-4 (Supply Chain Risk Management)",
+    "recommended_evidence": [
+      "Vendor security questionnaire",
+      "Third-party audit report / SOC 2",
+      "Contractual security clauses"
+    ]
+  },
+  {
+    "topic": "API Security",
+    "iso27001": "A.8.26 Application security requirements",
+    "nist_csf": "PR.DS-2, PR.PT-3 (Data-in-transit protection, Least functionality)",
+    "recommended_evidence": [
+      "API gateway rate-limiting config",
+      "Authentication/authorization scheme for API",
+      "Last API penetration test"
+    ]
+  },
+  {
+    "topic": "Email Security",
+    "iso27001": "A.8.23 Web filtering / A.5.14 Information transfer",
+    "nist_csf": "PR.AT-1, DE.CM-4 (Awareness Training, Malicious Code Detection)",
+    "recommended_evidence": [
+      "Anti-phishing filter configuration",
+      "Security awareness training records",
+      "DMARC/SPF/DKIM configuration"
+    ]
+  },
+  {
+    "topic": "Endpoint Protection",
+    "iso27001": "A.8.7 Protection against malware",
+    "nist_csf": "PR.DS-6, DE.CM-4",
+    "recommended_evidence": [
+      "EDR deployment coverage report",
+      "Device encryption status",
+      "Patch compliance report"
+    ]
+  },
+  {
+    "topic": "Cloud Configuration Management",
+    "iso27001": "A.8.9 Configuration management",
+    "nist_csf": "PR.IP-1, DE.CM-1",
+    "recommended_evidence": [
+      "Cloud security posture management (CSPM) report",
+      "Storage bucket access policy",
+      "Configuration baseline document"
+    ]
+  },
+  {
+    "topic": "Network Security Management",
+    "iso27001": "A.8.20 Network security / A.8.21 Security of network services",
+    "nist_csf": "PR.AC-5, PR.PT-4",
+    "recommended_evidence": [
+      "Firewall rule review log",
+      "Network segmentation diagram",
+      "IDS/IPS alert summary"
+    ]
+  },
+  {
+    "topic": "DevSecOps / Secure SDLC",
+    "iso27001": "A.8.25 Secure development life cycle",
+    "nist_csf": "PR.IP-2, PR.DS-8",
+    "recommended_evidence": [
+      "CI/CD pipeline access controls",
+      "Secrets management configuration",
+      "Code/dependency scanning results"
+    ]
+  },
+  {
+    "topic": "Data Protection",
+    "iso27001": "A.5.34 Privacy and PII protection / A.8.11 Data masking",
+    "nist_csf": "PR.DS-1, PR.DS-5",
+    "recommended_evidence": [
+      "Data classification policy",
+      "Access control list for sensitive data",
+      "Data retention/disposal policy"
+    ]
+  },
+  {
+    "topic": "Business Continuity",
+    "iso27001": "A.5.29-A.5.30 Business continuity",
+    "nist_csf": "RC.RP-1, RC.IM-1",
+    "recommended_evidence": [
+      "Business continuity plan",
+      "Last BCP tabletop exercise report",
+      "RTO/RPO definitions"
+    ]
+  },
+  {
+    "topic": "Incident Response",
+    "iso27001": "A.5.24-A.5.28 Information security incident management",
+    "nist_csf": "RS.RP-1, RS.CO-2",
+    "recommended_evidence": [
+      "Incident response plan",
+      "Last incident post-mortem",
+      "Escalation contact list"
+    ]
+  },
+  {
+    "topic": "Compliance Monitoring",
+    "iso27001": "A.5.35-A.5.36 Compliance reviews",
+    "nist_csf": "ID.GV-3, DE.DP-1",
+    "recommended_evidence": [
+      "Internal audit report",
+      "Regulatory compliance checklist",
+      "Control testing evidence log"
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "risk_id": "RSK-01",
+    "name": "Credential compromise",
+    "asset_id": "AST-01",
+    "control_topic": "MFA / Authentication",
+    "likelihood": 4,
+    "impact": 5
+  },
+  {
+    "risk_id": "RSK-02",
+    "name": "Ransomware",
+    "asset_id": "AST-10",
+    "control_topic": "Backup",
+    "likelihood": 3,
+    "impact": 5
+  },
+  {
+    "risk_id": "RSK-03",
+    "name": "Vendor breach",
+    "asset_id": "AST-15",
+    "control_topic": "Supplier Security",
+    "likelihood": 3,
+    "impact": 4
+  },
+  {
+    "risk_id": "RSK-04",
+    "name": "Unpatched critical vulnerability",
+    "asset_id": "AST-04",
+    "control_topic": "Vulnerability Management",
+    "likelihood": 4,
+    "impact": 4
+  },
+  {
+    "risk_id": "RSK-05",
+    "name": "Unauthorized privileged access",
+    "asset_id": "AST-08",
+    "control_topic": "Privileged Access Management",
+    "likelihood": 3,
+    "impact": 5
+  },
+  {
+    "risk_id": "RSK-06",
+    "name": "Payment API abuse",
+    "asset_id": "AST-03",
+    "control_topic": "API Security",
+    "likelihood": 3,
+    "impact": 5
+  },
+  {
+    "risk_id": "RSK-07",
+    "name": "Phishing-led account takeover",
+    "asset_id": "AST-06",
+    "control_topic": "Email Security",
+    "likelihood": 4,
+    "impact": 3
+  },
+  {
+    "risk_id": "RSK-08",
+    "name": "Endpoint malware infection",
+    "asset_id": "AST-05",
+    "control_topic": "Endpoint Protection",
+    "likelihood": 3,
+    "impact": 3
+  },
+  {
+    "risk_id": "RSK-09",
+    "name": "Misconfigured cloud storage bucket",
+    "asset_id": "AST-07",
+    "control_topic": "Cloud Configuration Management",
+    "likelihood": 3,
+    "impact": 4
+  },
+  {
+    "risk_id": "RSK-10",
+    "name": "VPN credential brute-forcing",
+    "asset_id": "AST-11",
+    "control_topic": "MFA / Authentication",
+    "likelihood": 3,
+    "impact": 4
+  },
+  {
+    "risk_id": "RSK-11",
+    "name": "Firewall rule drift",
+    "asset_id": "AST-12",
+    "control_topic": "Network Security Management",
+    "likelihood": 2,
+    "impact": 3
+  },
+  {
+    "risk_id": "RSK-12",
+    "name": "CI/CD pipeline compromise",
+    "asset_id": "AST-14",
+    "control_topic": "DevSecOps / Secure SDLC",
+    "likelihood": 2,
+    "impact": 4
+  },
+  {
+    "risk_id": "RSK-13",
+    "name": "HR data exposure",
+    "asset_id": "AST-09",
+    "control_topic": "Data Protection",
+    "likelihood": 2,
+    "impact": 3
+  }
+]

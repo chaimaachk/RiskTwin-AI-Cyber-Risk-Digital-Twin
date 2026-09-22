@@ -1,0 +1,42 @@
+[
+  {
+    "scenario_id": "SCN-A",
+    "name": "MFA Failure",
+    "description": "MFA becomes unavailable for privileged accounts for 24 hours.",
+    "affected_chain": ["Identity", "Privileged Accounts", "Critical Applications", "Customer Data"],
+    "target_asset_ids": ["AST-01", "AST-03", "AST-08"],
+    "related_control_topics": ["MFA / Authentication", "Privileged Access Management"],
+    "likelihood_delta": 1,
+    "impact_delta": 0
+  },
+  {
+    "scenario_id": "SCN-B",
+    "name": "Unpatched Critical Vulnerability",
+    "description": "A critical vulnerability remains unpatched on an internet-facing application for 30 days.",
+    "affected_chain": ["Internet-facing Application", "Exploit Exposure", "Customer Platform", "Business Service"],
+    "target_asset_ids": ["AST-04", "AST-03"],
+    "related_control_topics": ["Vulnerability Management", "API Security"],
+    "likelihood_delta": 1,
+    "impact_delta": 1
+  },
+  {
+    "scenario_id": "SCN-C",
+    "name": "Third-Party Vendor Breach",
+    "description": "A third-party vendor integrated with the payment platform suffers a data breach.",
+    "affected_chain": ["Vendor", "API Integration", "Customer Data", "Compliance Exposure"],
+    "target_asset_ids": ["AST-15", "AST-03", "AST-02"],
+    "related_control_topics": ["Supplier Security", "API Security", "Data Protection"],
+    "likelihood_delta": 1,
+    "impact_delta": 0
+  },
+  {
+    "scenario_id": "SCN-D",
+    "name": "Backup System Unavailable",
+    "description": "The backup system becomes unavailable during an active ransomware incident.",
+    "affected_chain": ["Backup", "Recovery Capability", "Business Continuity", "Ransomware Resilience"],
+    "target_asset_ids": ["AST-10"],
+    "related_control_topics": ["Backup", "Business Continuity", "Incident Response"],
+    "likelihood_delta": 0,
+    "impact_delta": 1
+  }
+]
